@@ -16,6 +16,12 @@ import java.util.Properties;
 import java.util.Set;
 
 public class AttributeFillerFromProperties {
+    /**
+     * This method loads properties from a file to the attributes of an object of a certain class
+     * @param cls - class to create an instance of
+     * @param propertiesPath - file to copy properties from
+     * @return classInstance - an object to be created
+     */
     public static <T>T loadFromProperties(Class<T> cls, Path propertiesPath) throws NoSuchMethodException,
             InvocationTargetException, InstantiationException, IllegalAccessException, IOException,
             OperationNotSupportedException, NoSuchFieldException {
@@ -32,6 +38,12 @@ public class AttributeFillerFromProperties {
         return classInstance;
     }
 
+    /**
+     * This method parses given file and transfers values from its properties to the object attributes
+     * @param propertySet - set of properties from the file
+     * @param field - field of an object to map value from properties
+     * @return value of certain type or an exception
+     */
     public static Object getFieldValue (Set<Map.Entry<Object, Object>> propertySet, Field field) throws NoSuchFieldException,
             OperationNotSupportedException {
         String name;
