@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<violations>
+    <violation>
+        <type>CROSSING_OVER_A_CENTER_DIVIDER</type>
+        <total_amount>3.96489872E8</total_amount>
+    </violation>
+    <violation>
+        <type>DRIVING_WITHOUT_A_LICENSE</type>
+        <total_amount>3.9540331440000004E8</total_amount>
+    </violation>
+    <violation>
+        <type>DUI</type>
+        <total_amount>3.9458922E8</total_amount>
+    </violation>
+    <violation>
+        <type>SPEEDING</type>
+        <total_amount>3.9364578E8</total_amount>
+    </violation>
+</violations>
